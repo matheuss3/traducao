@@ -23,7 +23,7 @@ caso precise ou melhorias gerais.
 ### 1 - Exportar Termos do Banco
 Essa função permite que exporte os termos do banco de dados para um arquivo em excel caso deseje e tenha mais facilidade
 em manipular as informações pelo excel, ou queira fazer alguma análise mais específica.<br><br>
-> *Para conexão com o banco de dados crie um arquvivo **config.ini** com a seção **DATABASE** e a **URL_STRING** de conexão*
+> - *Para conexão com o banco de dados crie um arquvivo **config.ini** com a seção **DATABASE** e a **URL_STRING** de conexão*
 
 ### 2 - Criar query para inserir novos termos
 Essa função cria uma query baseado no arquivo "terms.xlsx" que deve está presente na pasta files/imports (ele já traduz dinâmicamente para o espanhol, antes da inserção). Verifique o layout
@@ -31,22 +31,20 @@ do arquivo nas observações abaixo.<br>
 
 ### 3 - Enriquece base (tradução inglês)
 Altera o arquivo **"terms.xlsx"** da pasta files/imports inserindo na coluna TermIngles os termos da coluna Term que estão 
-em português.<br><br>
-> *Ele ajuda com a tradução de vários termos, porque a faz de forma automática, porém é necessário uma revisão da tradução ao final pois os alguns termos fora de contexto não são traduzidos corretamente pela api do google, principalmente termos abreviados.*
+em português.<br>
+> - *Ele ajuda com a tradução de vários termos, porque a faz de forma automática, porém é necessário uma revisão da tradução ao final pois os alguns termos fora de contexto não são traduzidos corretamente pela api do google, principalmente termos abreviados.*
 
 ### 4 - Gera lista com termos duplicados
-Gera uma lista com os termos duplicados no banco de dados, para evitar redundacia dos dados.<br><br>
-> *Os termos tem como chave primária as colunas **Term** e **TermTypeAccept** então pode ser que existem dois termos iguais mas com o **TermTypeAccept** diferentes. Então não estranhe isso somente que um termo pode ser mais específico que outro ou que são aceitos em lugares específicos.*<br>
-> *Utiliza o ultimo arquivo exportado do banco (Opção 1) para o backup então antes de executar aqui certifique-se que o arquvo esteja atualizado da forma que queira*
+Gera uma lista com os termos duplicados no banco de dados, para evitar redundacia dos dados.<br>
+> - *Os termos tem como chave primária as colunas **Term** e **TermTypeAccept** então pode ser que existem dois termos iguais mas com o **TermTypeAccept** diferentes. Então não estranhe isso somente que um termo pode ser mais específico que outro ou que são aceitos em lugares específicos.*<br>
+> - *Utiliza o ultimo arquivo exportado do banco (Opção 1) para o backup então antes de executar aqui certifique-se que o arquvo esteja atualizado da forma que queira*
 
 ### 5 - Gera query de backup de termos
 Cria uma query de **INSERT** com todos os termos cadastrados na tabela de termos.
-> *Utiliza o ultimo arquivo exportado do banco (Opção 1) para o backup então antes de executar aqui certifique-se que o arquvo esteja atualizado da forma que queira*
+> - *Utiliza o ultimo arquivo exportado do banco (Opção 1) para o backup então antes de executar aqui certifique-se que o arquvo esteja atualizado da forma que queira*
 
 ### 6 - Limpa arquivo com as mensagens da MessageBox
 Carregando... Aguarde!
-
-<br>
 <br>
 
 ## 1. Casos de Uso
