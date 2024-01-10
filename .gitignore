@@ -1,0 +1,7 @@
+__pycache__
+files/exports/*.xlsx
+files/imports/*.xlsx
+files/messagebox/*.xlsx
+outputs/duplicados/*.json
+outputs/inserts/*.sql
+config.ini

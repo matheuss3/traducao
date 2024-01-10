@@ -1,0 +1,5 @@
+googletrans
+pandas
+sqlalchemy
+re
+openpyxl
